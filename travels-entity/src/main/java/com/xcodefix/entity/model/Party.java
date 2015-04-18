@@ -25,6 +25,7 @@ public class Party {
 	private VoiceAddress voiceAddress;
 	private WebAddress webAddress;
 	private RecordStaus recordStatus;
+	private Documents documents;
 	
 	@Id
 	@GeneratedValue
@@ -95,6 +96,15 @@ public class Party {
 	}
 	public void setRecordStatus(RecordStaus recordStatus) {
 		this.recordStatus = recordStatus;
+	}
+	
+	@OneToOne
+	@JoinColumn(name = "document_id")
+	public Documents getDocuments() {
+		return documents;
+	}
+	public void setDocuments(Documents documents) {
+		this.documents = documents;
 	}
 	
 }
