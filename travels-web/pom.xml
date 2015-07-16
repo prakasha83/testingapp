@@ -6,8 +6,8 @@
         <groupId>com.xcodefix</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
-  <artifactId>travels-web</artifactId>
+    
+	<artifactId>travels-web</artifactId>
   <packaging>war</packaging>
 
   <name>travels-web</name>
@@ -48,28 +48,26 @@
     	<artifactId>spring-orm</artifactId>
     </dependency>
     <dependency>
-    	<groupId>mysql</groupId>
-    	<artifactId>mysql-connector-java</artifactId>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-web</artifactId>
+    	<version>3.2.13.RELEASE</version>
     </dependency>
     <dependency>
     	<groupId>org.springframework.security</groupId>
     	<artifactId>spring-security-core</artifactId>
-    	<version>3.2.7.RELEASE</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.springframework.security</groupId>
-    	<artifactId>spring-security-web</artifactId>
-    	<version>3.2.7.RELEASE</version>
     </dependency>
     <dependency>
     	<groupId>org.springframework.security</groupId>
     	<artifactId>spring-security-config</artifactId>
-    	<version>3.2.7.RELEASE</version>
     </dependency>
     <dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-web</artifactId>
-    	<version>3.2.13.RELEASE</version>
+    	<groupId>org.springframework.security</groupId>
+    	<artifactId>spring-security-web</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>com.xcodefix</groupId>
+    	<artifactId>travels-service</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
