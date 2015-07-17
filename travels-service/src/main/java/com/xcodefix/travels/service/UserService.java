@@ -10,14 +10,10 @@ public class UserService {
 	@Autowired
 	private UserDao userDao;
 	
-	public boolean authenticate(String userName) {
-		User user = userDao.getUser(userName);
+	public User authenticate(String userName, String password) {
+		User user = userDao.getUser(userName, password);
 		
-		if (user == null) {
-			return false;
-		}
-		
-		return true;
+		return user;
 	}
 
 }

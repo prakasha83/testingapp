@@ -8,6 +8,9 @@
 			http://www.springframework.org/schema/security 
 			http://www.springframework.org/schema/security/spring-security-3.2.xsd">
 			
+	<security:http pattern="/resources/**" security="none"/>
+	<security:http pattern="/login*" security="none"/>
+			
 	<security:http auto-config="false" use-expressions="true" access-denied-page="/denied"
 			entry-point-ref="authenticationEntryPoint" >
 		
@@ -17,7 +20,7 @@
 				invalidate-session="true" 
 				logout-success-url="/login"
 				logout-url="/j_spring_security_logout"/>
-				
+		<security:custom-filter ref="blacklistFilter" before="FILTER_SECURITY_INTERCEPTOR"/>
 		<security:custom-filter ref="authenticationFilter" position="FORM_LOGIN_FILTER"/>
 		
 	</security:http>
@@ -29,10 +32,27 @@
   		p:authenticationFailureHandler-ref="customAuthenticationFailureHandler"
   		p:authenticationSuccessHandler-ref="customAuthenticationSuccessHandler"/>
   		
+  	<bean id="blacklistFilter" class="com.xcodefix.travels.web.security.BlacklistFilter"/>
+  		
 	<!-- Custom authentication manager. In order to authenticate -->
-	<bean id="authenticationManager" class="com.xcodefix.travels.web.security.AuthendicationProvider">
-		
-	</bean>  		
-			
+	<bean id="authenticationManager" class="com.xcodefix.travels.web.security.AuthedicationManager"/>
+	
+	 	<!-- We just actually need to set the default failure url here -->
+ 	<bean id="customAuthenticationFailureHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler"
+ 		p:defaultFailureUrl="/login?error=true"/>
+ 		
+ 	 <!-- We just actually need to set the default target url here -->
+ 	<bean id="customAuthenticationSuccessHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler"
+ 		p:defaultTargetUrl="/home" />
+ 		
+ 		<!-- The tag below has no use but Spring Security needs it to autowire the parent property of 
+			org.springframework.security.authentication.ProviderManager. Otherwise we get an error 
+			A probable bug. This is still under investigation-->
+	<security:authentication-manager/>
+ 	<!-- The AuthenticationEntryPoint is responsible for redirecting the user to a particular page, like a login page,
+ 			whenever the server sends back a response requiring authentication -->
+ 	<!-- See Spring-Security Reference 5.4.1 for more info -->
+ 	<bean id="authenticationEntryPoint"  class="org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint"
+	 	p:loginFormUrl="/login"/>
 			
 </beans>

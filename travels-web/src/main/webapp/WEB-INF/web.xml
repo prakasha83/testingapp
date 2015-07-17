@@ -4,8 +4,11 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-			classpath:travels-entity-config.xml
-			/WEBINF/security.xml
+			/WEB-INF/security.xml
+			/WEB-INF/spring-config.xml
+			classpath:travels-entity.xml
+			classpath:travels-service.xml
+			classpath:travels-dao.xml
 		</param-value>
 	</context-param>
   	<listener>
@@ -18,15 +21,15 @@
         </session-timeout>
     </session-config>
         
-    <filter>
-    	<filter-name>springSecurityFilterChain</filter-name>
-        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+<filter>
+	        <filter-name>springSecurityFilterChain</filter-name>
+	        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
 	</filter>
-        
+	
 	<filter-mapping>
-		<filter-name>springSecurityFilterChain</filter-name>
-		<url-pattern>/*</url-pattern>
-	</filter-mapping>
+	        <filter-name>springSecurityFilterChain</filter-name>
+	        <url-pattern>/*</url-pattern>
+	  </filter-mapping>
 	
 	<servlet>
 		<servlet-name>dispatcherServlet</servlet-name>
