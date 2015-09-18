@@ -1,0 +1,643 @@
+/* CSS */
+body{
+	/*font-family : "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: 'PT Sans', sans-serif;*/
+	font-family: sans-serif;
+	font-size : 12px;
+}
+/* For Bootstrap Select */
+.has-error .selectpicker {
+	border : 1px solid Red !important;
+	border-color : Red !important;
+}
+.taberror{
+	color : Red !important;
+}
+/*.has-success .selectpicker {
+	border : 1px solid #3C763D !important;
+	border-color : #3C763D !important;
+}*/
+/* End For Bootstrap Select */
+
+/* Bootstrap Over Write*/
+.datatableres .btn{
+	font-size : 10px;
+	padding : 3px 6px;
+}
+.datatableres tr td:last-child, .datatableres tr th:last-child{
+	width : 75px;
+	/*display: block;*/
+}
+.btn{
+	border-radius : 0px;
+	font-size : 12px;
+}
+.table > tbody > tr > td{
+	/*font-family : "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+	font-family: sans-serif;
+}
+.form-control{
+	/*font-family : "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+	font-family: sans-serif;
+	border-radius : 0px;
+	-webkit-box-shadow : none;
+	box-shadow : none;
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; 
+}
+.width50{
+	width : 45%;
+	display : inline-block;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
+	border : 0px;
+	background : transparent;
+	padding : 0px;
+	border-bottom  :1px solid #DDD;
+}
+.width25{
+	width : 25%;
+	display : inline-block;
+}
+
+.form-control:focus, .form-control:hover{
+	box-shadow : none;
+	-webkit-box-shadow : none;
+}
+/* End Bootstrap Over Write*/
+/* Main CSS */
+.container-fluid{
+	padding: 0px 6px 0px 0px;
+	visibility: visible;
+	margin-right: auto;
+	margin-left: auto;
+}
+/* End Main CSS */
+
+/* Common CSS */
+/* For form Validation */
+.errorpop{
+	border-color : red !important;
+}
+.tooltip span.fm-error{
+	font-size : 11px !important;
+	color : #FFF;
+}
+.fm-error{
+	display : block;
+	color : Red;
+	font-size : 11px;
+	padding : 5px 0px; 
+	/*font-family : "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+	font-family: sans-serif;
+}
+.fm-error p{
+	margin : 0px;
+	padding : 0px;
+}
+.help-block, #tripclone0 .rmvtriphide{
+	/*display : none;*/
+}
+.form-head{
+	padding : 5px 10px;
+	border : 1px solid;
+}
+.form-head h2, .form-head h3{
+	font-size : 18px;
+	padding : 0px;
+	margin : 0px;
+	margin-top : 10px;
+}
+.form-body{
+	padding : 20px 10px;
+	border : 1px solid;
+}
+.form-footer{
+	padding : 10px;
+	border : 1px solid;
+}
+.form-wrapper .form-fields{
+	padding-bottom : 3px;
+}
+.form-wrapper .form-body h3{
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+	margin: 10px 0px;
+	background: #FFE55F;
+	display: inline-block;
+}
+.table-head{
+	padding : 5px 10px;
+	border : 1px solid;
+}
+.table-head h2, .table-head h3{
+	font-size : 18px;
+	padding : 0px;
+	margin : 0px;
+	margin-top : 10px;
+}
+.table-body{
+	padding : 20px 10px;
+	border : 1px solid;
+}
+.table-body .table > tbody > tr{
+	cursor  :pointer;
+}
+.table-footer{
+	padding : 10px;
+	border : 1px solid;
+}
+.table-wrapper .table-fields{
+	padding-bottom : 10px;
+}
+.table-body .form-control, .form-body .form-control{
+	height : 29px;
+	font-size : 12px;
+}
+/* End Common CSS */ 
+/* Login Part */
+body.login {
+	background-position : top center;
+	background-repeat : repeat-y;
+	background-size : 6px 1px;
+}
+.login-part{
+	padding : 10px;
+	border : 3px solid;
+	border-radius : 5px;
+	margin-top : 50px;
+}
+/* End Login Part */
+
+/* Sidebar , Nav and Others CSS */
+#side-bar{
+	visibility : visible;
+	height : 100%;
+	width: 236px;
+	position: fixed;
+	/*border-right : 1px solid;*/
+	webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	transition: all .5s ease;
+	padding-top : 49px;
+}
+#side-bar nav.nav-bar{	
+	padding-bottom : 70px;
+}
+#side-bar .brand-con{	
+	padding : 3px 10px;	
+	border-bottom : 1px solid;
+}
+#side-bar .brand-name{	
+	padding : 0px;
+	margin : 7px 0px;
+	text-align : center;
+	font-weight : bold;
+	font-size : 16px;
+}
+#side-bar nav.left-menu-bar{
+	position : relative;
+	overflow : hidden;
+	height : 100%;
+	overflow-y : hidden;
+	outline : none
+}
+#side-bar nav.nav-bar ul.main-menu{
+	list-style: none;
+	margin: 0px;
+	padding: 15px 15px 15px 10px;
+}
+#side-bar nav.nav-bar ul.main-menu li{
+	margin-bottom : 3px;
+}
+#side-bar nav.nav-bar ul.main-menu li a{
+	text-decoration : none;
+	font-size : 12px;
+	border : 1px solid;
+}
+#side-bar nav.nav-bar ul.main-menu li a span.menu-icon{	
+	width : 20px;
+	text-align : center;
+	font-size : 16px;
+	display : inline-block;
+	margin-right : 5px;
+}
+#side-bar nav.nav-bar ul.main-menu li a span.menu-text{	
+	display : inline-block;
+	padding-left : 10px;
+}
+#side-bar nav.nav-bar ul.main-menu > li > a{
+	display: block;
+	background-color: #e9e9e9;
+	border-bottom : 1px solid;
+	line-height: 1px;
+	padding: 4px 10px;
+	line-height: 22px;
+	position : relative;	
+	/*padding-left : 20px;*/
+}
+#side-bar nav.nav-bar ul.main-menu > li > ul{
+	padding	: 0px;
+	margin	: 0px;
+	display	: none;
+}
+#side-bar nav.nav-bar ul.main-menu > li > ul > li > a{
+	display: block;
+	border-bottom : 1px solid;
+	line-height: 1px;
+	padding : 10px;
+	/*padding-left : 20px;*/
+}
+#side-bar nav.nav-bar ul.main-menu li ul li a span.menu-icon{
+	font-size : 12px;
+}
+#side-bar .sidebar-links{
+	padding : 10px 5px;
+}
+#side-bar nav.nav-bar ul.main-menu > li.opened a:after, #side-bar nav.nav-bar ul.main-menu > li.active a:after, #side-bar nav.nav-bar ul.main-menu > li:hover a:after{
+	content : "";
+	border : 14px solid;
+	border-color : transparent #0375D5 transparent transparent;
+	position : absolute;
+	top : 1px;
+	right : -2px;
+}
+#side-bar nav.nav-bar ul.main-menu > li.menu-divider{
+	margin : 7px 0px;
+	padding : 0px;
+	border-top : 1px solid #346c9b;
+	box-shadow: 1px 1px 1px 1px #8FACC3;
+}
+/* End Sidebar , Nav and Others CSS */
+
+/* Main Container CSS */
+#main-container{	
+	margin-left : 236px;
+	overflow : visible;
+	position : relative;
+	min-width : 320px;
+	min-height : 630px;
+	padding : 0px;
+	padding-top : 48px;	
+	border-left : 1px solid;
+	padding-bottom : 60px;	
+	webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+/* Header Bar */
+#header-bar{
+	visibility: visible;
+	min-height: 0px;
+	height: 49px;
+	margin: 0px;
+	z-index: 1001;
+	padding: 5px 15px 5px 10px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+#header-bar .brand-name{
+	font-size : 28px;
+	padding : 0px;
+	padding-left : 60px;
+	margin : 0px;
+}
+.to-collapse{
+	position: absolute;
+	font-size: 26px;
+	color: #000;
+	padding: 5px 10px;
+	line-height: 1px;
+}
+#header-bar .top-alerts ul{
+	float : right;
+	list-style : none;
+	padding-top : 5px;
+}
+#header-bar .top-alerts ul li{
+	display : inline-block;
+	margin-right : 5px;
+}
+#header-bar .top-alerts ul li a{
+	color : #FFF;
+	font-size : 20px;
+	padding : 10px 5px;
+	text-decoration : none;
+}
+#header-bar .top-alerts ul li a:hover, #header-bar .top-alerts ul li:hover a{
+	color : #434343;
+}
+/* End Header Bar */
+
+/* Content Bar */
+#content-bar{
+	
+}
+.inner-content{
+	padding-left: 24px;
+	padding-right: 24px;
+}
+.brdcm-bar{
+	font-weight: 700;
+	font-size : 14px;
+	text-transform: uppercase;
+	position: fixed;
+	overflow: hidden;
+	z-index: 997;
+	padding : 10px 5px 7px 15px;
+	top: 49px;
+	left: 236px;
+	right: 0px;
+	border-left: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+	box-shadow: 0 1px 0 0 #fff;	
+	-moz-box-shadow: 0 1px 0 0 #fff;
+	-webkit-box-shadow: 0 1px 0 0 #fff;
+	color: #ababab;
+	webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	transition: all .5s ease;
+	
+}
+.main-title-bar{
+	padding : 24px;
+	font-size : 30px;
+	margin-top : 40px;
+	margin-bottom : 10px;
+}
+
+.tripclone{
+	margin-bottom : 10px;
+}
+/* End Content Bar */
+
+/* Footer CSS */
+#footer-bar{
+	font-weight: 700;
+	position: fixed;
+	overflow: hidden;
+	z-index: 10000;
+	text-align: center;
+	padding: 0px 10px;
+	height: 48px;
+	line-height: 48px;
+	bottom: 0px;
+	left: 236px;
+	right: 0px;
+	border-top : 1px solid;
+	webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	transition: all .5s ease;
+}
+/* End Footer CSS */
+/* End Main Container CSS */
+
+/* Time Picker CSS */
+.ui-timepicker-hour-cell a, .ui-timepicker-minute-cell a{
+	box-sizing: content-box;
+}
+/* End Time Picker CSS */
+.clonetr, #clone_parent{
+	display : none;
+}
+
+.cloner .remove-clone{
+	display : none;
+}
+
+/* Dashboard */
+.dash-wraper{
+	margin : 0px;
+	padding : 0px;
+	border : 0px;
+}
+.dash-title{
+	margin : 0px;
+	padding : 10px;
+	font-size : 19px;
+	background-color : #12E27E;
+	color : #FFF;
+}
+.dash-wraper h4{
+	margin : 0px;
+	padding : 10px;
+	font-size : 15px;
+	color : #575757;
+}
+.dash-content{
+	margin : 0px;
+	padding : 0px;
+	background-color : #8AFCC5;
+	color : #575757;
+}
+.dash-content ul{
+	margin : 0px;
+	padding : 0px;
+	list-style : none outside none;
+}
+.dash-content ul li{
+	margin : 0px;
+	height : 20px;
+	padding : 10px 20px 30px;
+	display : block;
+	list-style : none;
+}
+.dash-content ul li:nth-child(even){
+	background-color : #53ECA3;
+}
+
+.dash-wraper-blue .dash-title{
+	background-color : #88CED8;
+	color : #FFF;
+}
+.dash-wraper-blue .dash-content{
+	background-color : #C5EDF3;
+	color : #575757;
+}
+.dash-wraper-blue .dash-content ul li:nth-child(even){
+	background-color : #95E1EC;
+}
+.dash-wraper-orange .dash-title{
+	background-color : #FDA029;
+	color : #FFF;
+}
+.dash-wraper-orange .dash-content{
+	background-color : #FFD094;
+	color : #575757;
+}
+.dash-wraper-orange .dash-content ul li:nth-child(even){
+	background-color : #FFBC67;
+}
+.dash-wraper-yellow .dash-title{
+	background-color : #F3C200;
+	color : #FFF;
+}
+.dash-wraper-yellow .dash-content{
+	background-color : #FDECA6;
+	color : #575757;
+}
+.dash-wraper-yellow .dash-content ul li:nth-child(even){
+	background-color : #FDDE5D;
+}
+.dash-wraper-red .dash-title{
+	background-color : #FF8F7A;
+	color : #FFF;
+}
+.dash-wraper-red .dash-content{
+	background-color : #FCCAC0;
+	color : #575757;
+}
+.dash-wraper-red .dash-content ul li:nth-child(even){
+	background-color : #FFAE9E;
+}
+.dash-content ul li .dash-label{
+	display : block;
+	float : left;
+}
+.dash-content ul li .dash-value{
+	display : block;
+	float : right;
+	font-weight : 700;
+}
+/* End Dashboard */
+
+/* Print Screen View */
+	.print-wrapper{
+		margin : 0px;
+		padding : 0px;
+		width : 800px;
+		/*font-family : "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+		font-family: sans-serif;
+		overflow-Y : auto;
+		padding-bottom : 30px;
+	}	
+	.print-wrapper label{
+		margin-bottom: 0px;
+	}
+	.print-wrapper table{
+		width : 100%;
+		border-right : 1px solid #DDD;
+		border-top : 1px solid #DDD;
+		border-spacing : 0px;
+	}
+	.print-head table{
+		border : 0px;
+	}
+	.print-head table td{
+		color : #676767;
+	}
+	.print-wrapper table td, .print-wrapper table th{
+		padding : 5px;
+		border-left : 1px solid #DDD;
+		border-bottom : 1px solid #DDD;
+		/*font-family : "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+		font-family: sans-serif;
+	}
+	.print-wrapper table td.fill, .print-wrapper table th.fill{
+		background : #DEDEDE;
+	}
+	.print-wrapper table th label{
+		font-size : 14px;
+	}
+	.print-wrapper .printnumber{
+		font-size : 18px;
+		font-weight : 600;
+		color : red;
+	}
+	.print-wrapper table td.nobottom, .print-wrapper table th.nobottom{
+		border-bottom : 0px solid #DDD;
+	}
+	.print-wrapper tabel.noborder, .print-wrapper table td.noborder, .print-wrapper table th.noborder{
+		border : 0px solid #DDD;
+	}
+	.print-body label{
+		font-size : 13px;
+		font-weight : bold;
+	}
+	.print-body .borderdiv{
+		padding : 18px 10px;
+		border : 1px solid #DDD;
+		width : 100%;
+	}
+/* End Print Screen View */
+
+/*  Print */
+@media print {
+	#side-bar, #header-bar, .brdcm-bar, .print-preview, #footer, .print_hide{
+		display : none;
+		visibility : hidden;
+	}
+    #main-container{
+		width : 100% !important;
+		min-width : 100% !important;
+		padding: 0px !important;
+		margin : 0px !important;
+		border-left : 0px solid !important;
+	}
+	.inner-content{
+		padding : 0px;
+	}
+	.print-wrapper{
+		margin : 0px;
+		padding : 0px;
+		width : 100%;
+		/*font-family : "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+		font-family: sans-serif;
+	}
+	.print-wrapper label{
+		margin-bottom: 0px;
+	}
+	.print-wrapper table{
+		width : 100%;
+		border-right : 1px solid #DDD;
+		border-top : 1px solid #DDD;
+		border-spacing : 0px;
+	}
+	.print-head table{
+		border : 0px;
+	}
+	.print-head table td{
+		color : #676767;
+	}
+	.print-wrapper table td, .print-wrapper table th{
+		padding : 5px;
+		border-left : 1px solid #DDD;
+		border-bottom : 1px solid #DDD;
+		/*font-family : "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+		font-family: sans-serif;
+	}
+	.print-wrapper table td.nobottom, .print-wrapper table th.nobottom{
+		border-bottom : 0px solid #DDD;
+	}
+	.print-wrapper table td.fill, .print-wrapper table th.fill{
+		background-color : #DEDEDE;
+	}
+	.print-wrapper table th label{
+		font-size : 14px;
+	}
+	.print-wrapper tabel.noborder, .print-wrapper table td.noborder, .print-wrapper table th.noborder{
+		border : 0px solid #DDD;
+	}
+	.print-body label{
+		font-size : 13px;
+		font-weight : bold;
+	}
+	.print-body .borderdiv{
+		padding : 18px 10px;
+		border : 1px solid #DDD;
+		width : 100%;
+	}
+}
+/*  End Print */
+div.dataTables_filter label{
+	margin-right : 12px;
+}
+#need_to_collect b{
+	color : red;
+}

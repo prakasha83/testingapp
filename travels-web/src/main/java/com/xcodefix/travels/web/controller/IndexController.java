@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.xcodefix.entity.model.ActiveMenu;
+import com.xcodefix.entity.model.Menu;
 import com.xcodefix.entity.model.process.LoginForm;
 
 @Controller
@@ -31,7 +33,15 @@ public class IndexController {
 	@RequestMapping(value = "/home")
 	public ModelAndView getHome() {
 		ModelAndView mav = new ModelAndView("index");
+		ActiveMenu menu = new ActiveMenu();
+		menu.setDashboard("active");
 		
+		Menu customer = new Menu();
+		
+		System.out.println("Customer : " + customer.getCustomer());
+		
+		mav.addObject("activeMenu", menu);
+		mav.addObject("menu",customer);
 		return mav;
 	}
 	

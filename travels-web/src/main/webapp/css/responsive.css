@@ -1,0 +1,21 @@
+/* Responsive */
+
+/* Sidebar , Nav and Others CSS */
+.move-collapsed #side-bar{
+	visibility : visible;
+}
+/* End Sidebar , Nav and Others CSS */
+/* Main Container CSS */
+.move-collapsed #main-container{	
+	margin-left : 55px;
+}
+.move-collapsed .brdcm-bar{	
+	left : 0px;
+}
+/* End Main Container CSS */
+
+/* Footer */
+.move-collapsed #footer-bar{
+	left : 0px;
+}
+/* End Footer */
