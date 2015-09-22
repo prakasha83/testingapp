@@ -22,7 +22,7 @@
 				<%@ include file="template/default/topheader.jsp"%>
 				<aside id="content-bar">
 					<div class="brdcm-bar">						
-						<span>TEST</span>
+						<span><td width="32%" class="labelField">Welcome, <sec:authentication property="details.email" /></td></span>
 					</div>					
 					<br/><br/><br/>
 					<div class="app-content">
