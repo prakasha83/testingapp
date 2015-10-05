@@ -1,0 +1,553 @@
+/*
+To-Do: 
+
+1. Check into why sub menu isn't getting a :hover effect. - fixed?
+2. Check into padding on bottom and clean up whitespace.
+
+*/
+
+
+/*
+// --------------------------------------------------------------------------------------------------------------------
+// Primary Book
+// --------------------------------------------------------------------------------------------------------------------
+*/
+
+.bea-portal-book-primary
+{
+    padding: 0px;
+    margin: 0px;
+    font-size: small;
+    width: 100%;
+}
+
+.bea-portal-book-primary-content
+{
+    padding: 0px;
+    vertical-align: top;
+}
+
+/*
+// --------------------------------------------------------------------------------------------------------------------
+// Primary Book Page
+// --------------------------------------------------------------------------------------------------------------------
+*/
+
+.bea-portal-book-primary-page
+{
+    padding: 8px;
+}
+
+/*
+// --------------------------------------------------------------------------------------------------------------------
+// Standard Book
+// --------------------------------------------------------------------------------------------------------------------
+*/
+
+.bea-portal-book
+{
+    margin: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333366;
+}
+
+.bea-portal-book-content
+{
+    scrollbar-base-color:#d8d8e5;
+}
+
+/*
+// --------------------------------------------------------------------------------------------------------------------
+// Standard Book Page
+// --------------------------------------------------------------------------------------------------------------------
+*/
+
+.bea-portal-book-page
+{
+    background-color: #ffffff;
+    padding: 4px;
+    font-size: small;
+}
+
+/*
+// --------------------------------------------------------------------------------------------------------------------
+// Primary Book Root Menu, Multi-Level
+// --------------------------------------------------------------------------------------------------------------------
+*/
+
+.bea-portal-book-primary-menu
+{
+    display: none;
+}
+
+.bea-portal-book-primary-menu-root, .bea-portal-book-primary-menu-root-item > a, .bea-portal-book-primary-menu-root-item-active > a
+{
+    margin: 0px;
+    padding: 4px;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+.bea-portal-book-primary-menu-root
+{
+    font-size: small;
+    padding: 4px 0px;
+}
+
+.bea-portal-book-primary-menu-root a
+{
+    color: #333366;
+}
+
+.bea-portal-book-primary-menu-root a:hover
+{
+    color: #000033;
+    border-color: #9a9a9a;
+    text-decoration: none;
+}
+
+.bea-portal-book-primary-menu-root ul
+{
+    display: inline;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bea-portal-book-primary-menu-root li
+{
+    display: inline;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bea-portal-book-primary-menu-root-item
+{
+}
+
+.bea-portal-book-primary-menu-root-item-active a
+{
+    color: #000033;
+}
+
+/*
+// --------------------------------------------------------------------------------------------------------------------
+// Primary Book Nested Menu, Multi-Level
+// --------------------------------------------------------------------------------------------------------------------
+*/
+
+.bea-portal-book-primary-menu-nested
+{
+    font-size: x-small;
+}
+
+.bea-portal-book-primary-menu-nested-item a, .bea-portal-book-primary-menu-nested-item-active a { 
+    padding: 1px 4px;
+    display: block;
+    text-decoration: none;
+	border-bottom: thin solid #ccc;
+    width: 150px;
+}
+
+div.bea-portal-book-primary-menu-nested div a {
+	width: 200px;
+}
+
+.bea-portal-book-primary-menu-nested-item a:hover, .bea-portal-book-primary-menu-nested-item-active a:hover
+{
+    color: #f0f0f0;
+	background-color: #9a9a9a;
+    border-color: #ccc;
+}
+
+.bea-portal-book-primary-menu-nested-item a
+{
+    color: #036;
+    background-color: #f0f0f0;
+	padding: .5em;
+}
+
+.bea-portal-book-primary-menu-nested-item-active a
+{
+    color: #f0f0ff;
+    background-color: #9999cc;
+	padding: .5em;
+	
+}
+
+/*
+// --------------------------------------------------------------------------------------------------------------------
+// Standard Book Root Menu, Multi-Level
+// --------------------------------------------------------------------------------------------------------------------
+*/
+
+.bea-portal-book-menu
+{
+    display: none;
+}
+
+.bea-portal-book-menu-root, .bea-portal-book-menu-root-item a, .bea-portal-book-menu-root-item-active a
+{
+    margin: 0px;
+    padding: 4px;
+    font-weight: bold;
+    background-color: #d8d8e5;
+}
+
+.bea-portal-book-menu-root
+{
+    font-size: x-small;
+    padding: 4px 0px;
+}
+
+.bea-portal-book-menu-root a
+{
+    color: #333366;
+}
+
+.bea-portal-book-menu-root a:hover
+{
+    color: #000033;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+.bea-portal-book-menu-root ul
+{
+    display: inline;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bea-portal-book-menu-root li
+{
+    display: inline;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bea-portal-book-menu-root-item
+{
+}
+
+.bea-portal-book-menu-root-item-active a
+{
+    color: #000033;
+    border-color: #990000;
+    background-color: #ffffff;
+}
+
+/*
+// --------------------------------------------------------------------------------------------------------------------
+// Standard Book Nested Menu, Multi-Level
+// --------------------------------------------------------------------------------------------------------------------
+*/
+
+.bea-portal-book-menu-nested
+{
+    font-size: x-small;
+}
+
+.bea-portal-book-menu-nested-item a, .bea-portal-book-menu-nested-item-active a
+{
+    padding: 1px 4px;
+    display: block;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px 0px;
+    border-color: #cccce5;
+    width: 150px;
+}
+
+.bea-portal-book-menu-nested-item a:hover, .bea-portal-book-menu-nested-item-active a:hover
+{
+    color: #000033;
+    background-color: #b2b2e5;
+    border-color: #cccce5;
+}
+
+.bea-portal-book-menu-nested-item a
+{
+    color: #f0f0ff;
+    background-color: #9999cc;
+}
+
+.bea-portal-book-menu-nested-item-active a
+{
+    color: #f0f0ff;
+    background-color: #9999cc;
+}
+
+/*
+// --------------------------------------------------------------------------------------------------------------------
+// Primary Book Menu, Single-Level
+// --------------------------------------------------------------------------------------------------------------------
+*/
+
+.bea-portal-book-primary-menu-single-container
+{
+    font-family: verdana;
+    font-size: 8pt;
+    font-weight: bold;
+    padding-top: 10px;
+    border-bottom: 3px solid #9a9a9a;
+}
+
+.bea-portal-book-primary-menu-single,
+.bea-portal-book-primary-menu-single a,
+.bea-portal-book-primary-menu-single span
+{
+    margin: 0px;
+    padding: 0px;
+    color: #efefef;
+    text-decoration:none;
+}
+
+.bea-portal-book-primary-menu-single
+{
+    line-height: normal;
+}
+
+.bea-portal-book-primary-menu-single a
+{
+    text-decoration: none;
+    background:url("../img/left_blue_white.gif") no-repeat left top;
+    margin: 0;
+    padding:0px 0px 0px 9px;
+    float: left;
+    text-decoration:none;
+}
+
+.bea-portal-book-primary-menu-single a span {
+    background:url("../img/right_blue_white.gif") no-repeat right top;
+    padding:5px 11px 5px 0px;
+    color: #ffffff;
+    float: left;
+    display: block;
+    text-decoration: none;
+}
+
+.bea-portal-book-primary-menu-single a:hover
+{
+    background-position:0% -150px;
+	text-decoration: none;
+}
+
+.bea-portal-book-primary-menu-single a:hover span {
+    background-position: 100% -150px;
+    color: #333;
+	text-decoration: none;
+}
+
+
+.bea-portal-book-primary-menu-single span
+{
+    color: #000033;
+}
+
+.bea-portal-book-primary-menu-single ul
+{
+    list-style: none;
+    margin: 0px;
+}
+
+.bea-portal-book-primary-menu-single li
+{
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bea-portal-book-primary-menu-single-item
+{
+    padding-bottom: 0px;
+}
+
+.bea-portal-book-primary-menu-single-item-active
+{
+}
+
+.bea-portal-book-primary-menu-single-item-active a
+{
+    background-position:0% -150px;
+    text-decoration:none;
+}
+
+.bea-portal-book-primary-menu-single-item-active a span
+{
+    color: #333;
+    background-position:100% -150px;
+    text-decoration:none;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+.bea-portal-book-primary-menu-single a span {float:none;}
+/* End IE5-Mac hack */
+
+/*
+// --------------------------------------------------------------------------------------------------------------------
+// Standard Book Menu, Single-Level
+// --------------------------------------------------------------------------------------------------------------------
+*/
+.bea-portal-book-menu-single-container
+{
+}
+
+.bea-portal-book-menu-single
+{
+    margin: 0px;
+    padding: 3px 0px; 3px; 0px;
+    font-size: x-small;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+.bea-portal-book-menu-single a, .bea-portal-book-menu-single span
+{
+    color: #09498c;
+    padding: 4px;
+	text-decoration: none;
+}
+
+.bea-portal-book-menu-single a
+{
+	 text-decoration: none;
+}
+
+.bea-portal-book-menu-single a:hover
+{
+    text-decoration: none;
+}
+
+.bea-portal-book-menu-single a:hover span {
+    color: #09498c;
+}
+
+.bea-portal-book-menu-single span
+{
+}
+
+.bea-portal-book-menu-single ul
+{
+    display: inline;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bea-portal-book-menu-single li
+{
+    display: inline;
+    list-style: none;
+    margin: 0px;
+    border-left: solid 1px #ccc;
+}
+
+.bea-portal-book-menu-single-item
+{
+}
+
+.bea-portal-book-menu-single-item-active
+{
+    border-top: 4px solid #9a9a9a;
+    border-bottom: 4px solid #9a9a9a;
+	background-color: #9a9a9a;
+}
+.bea-portal-book-menu-single-item-active a, .bea-portal-book-menu-single-item-active span {
+	color: #fff;
+	text-decoration: none;
+}
+.bea-portal-book-menu-single-item-active a:hover span {
+	color: #fff;
+	text-decoration: none;
+}
+.bea-portal-book-menu-single-item-buttons
+{
+    background-color: #d8d8e5;
+}
+
+.bea-portal-book-menu-single-item a:hover, .bea-portal-book-menu-single-item a:hover span
+{
+	background-color: #9a9a9a;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* MIL Tabs */
+.bea-portal-book-primary-menu-hook {
+	margin-top: 10px;
+}
+.bea-portal-book-primary-menu-root {
+	margin-bottom: 5em;
+}
+
+ul.bea-portal-book-primary-menu-root {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.bea-portal-book-primary-menu-root li {
+	float: left;
+}
+
+ul.bea-portal-book-primary-menu-root li.bea-portal-book-primary-menu-item-active {
+	display: block;
+	float: left;
+}
+
+li a.topMenu,
+li.bea-portal-book-primary-menu-item-active a.topMenu {
+	background:transparent url(../img/left_blue_white.gif) no-repeat scroll left top;
+	color: #efefef;
+	float:left;
+	margin:0;
+	padding:0 0 0 9px;
+	text-decoration:none;
+}
+/* a > span */
+li a.topMenu span,
+li.bea-portal-book-primary-menu-item-active a.topMenu span {
+	background:transparent url(../img/right_blue_white.gif) no-repeat scroll right top;
+	color:#fff;
+	display:block;
+	float:left;
+	padding:5px 11px 5px 0;
+	text-decoration:none;
+}
+
+/* Active Tab */
+li.bea-portal-book-primary-menu-root-item-active a.topMenu {
+	background-position:0 -150px;
+	text-decoration:none;
+}
+li.bea-portal-book-primary-menu-root-item-active a.topMenu span {
+	background-position:100% -150px;
+	color:#333333;
+	text-decoration:none;
+}
+
+/* hover effects */
+li.bea-portal-book-primary-menu-item-active a.topMenu:hover {
+	background-position:0 -150px;
+	text-decoration:none;
+}
+li.bea-portal-book-primary-menu-item-active a.topMenu:hover span {
+	background-position:100% -150px;
+	color:#333333;
+	text-decoration:none;
+}
+/* end hover effects */
+
+/* ie hack menu */
+#ieHack {
+	display: none;
+	border: none;
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+}

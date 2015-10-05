@@ -1,6 +1,6 @@
 <nav class="nav-bar">
 	<ul class="main-menu">
-		
+		<!-- 
 		<li class="${activeMenu.dashboard}">
 			<a href="${pageContext.request.contextPath}/dashboard" class="${activeMenu.dashboard}" title="Dashboard"><span class="fa fa-home menu-icon"></span> <span class="menu-text">Dashboard</span></a>
 		</li>
@@ -141,6 +141,13 @@
 			<a href="${pageContext.request.contextPath}/role-list" class="${activeMenu.role}" title="User Management"><span class="fa fa-unlock-alt menu-icon"></span> <span class="menu-text">Role Management</span></a>
 		</li>	
 		</c:if>
-		<li class="menu-divider"></li>		
+		<li class="menu-divider"></li>
+		-->
+		<c:if test="${menu.travels == 'Y'}">
+		<li class="${activeMenu.travels}">
+			<a href="${pageContext.request.contextPath}/travels" class="${activeMenu.travels}" title="Travels"><span class="fa fa-users menu-icon"></span> <span class="menu-text">Travels</span></a>
+		</li>
+		<li class="menu-divider"></li>	
+		</c:if>	
 	</ul>
 </nav>

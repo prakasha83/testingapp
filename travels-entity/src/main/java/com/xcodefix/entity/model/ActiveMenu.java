@@ -25,6 +25,7 @@ public class ActiveMenu {
 	private String list;
 	private String user;
 	private String role;
+	private String travels;
 	
 	
 	public ActiveMenu() {
@@ -51,7 +52,7 @@ public class ActiveMenu {
 		list = "";
 		user = "";
 		role = "";
-		
+		setTravels("");
 	}
 	public String getDashboard() {
 		return dashboard;
@@ -190,6 +191,12 @@ public class ActiveMenu {
 	}
 	public void setRole(String role) {
 		this.role = role;
+	}
+	public String getTravels() {
+		return travels;
+	}
+	public void setTravels(String travels) {
+		this.travels = travels;
 	}
 
 }

@@ -6,30 +6,30 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@taglib uri="http://www.springframework.org/security/tags" prefix="sec"%>
 
-<%@ include file="template/default/head.jsp"%>
-<%@ include file="template/default/script.jsp"%>
+<%@ include file="template/known/head.jsp"%>
+<%@ include file="template/known/script.jsp"%>
 	<body>	
 		<div class="container-fluid" id="travel-app">
-			<section id="side-bar">	
+			<div class="navigation" width="30%">
 				<div class="brand-con">
 					<h3 class="brand-name">Travel APP</h3>
 				</div>
 				<div class="left-menu-bar">
-					<%@ include file="template/default/sidebar.jsp"%>
+					<%@ include file="template/known/navigationMenu.jsp"%>
 				</div>
-			</section>
-			<section id="main-container">
-				<%@ include file="template/default/topheader.jsp"%>
+			</div>
+			<div class="content" width="70%">
+				<%@ include file="template/known/topheader.jsp"%>
 				<aside id="content-bar">
 					<div class="brdcm-bar">						
 						<span><td width="32%" class="labelField">Welcome, <sec:authentication property="details.email" /></td></span>
 					</div>					
 					<br/><br/><br/>
 					<div class="app-content">
-						
+
 					</div>
 				</aside>
-			</section>
+			</div>
 		</div>
 		
 <%@ include file="template/default/footer.jsp"%>

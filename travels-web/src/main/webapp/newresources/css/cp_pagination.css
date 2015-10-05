@@ -1,0 +1,65 @@
+
+  .paginate_button {
+}
+
+
+.first{
+	background: url("../img/page-first.png") no-repeat center !important;
+}
+
+.previous {
+	background: url('../img/page-prev.png') no-repeat center !important;
+}
+
+.next{
+	background: url('../img/page-next.png') no-repeat center !important;
+}
+
+.last{
+	background: url('../img/page-last.png') no-repeat center !important;
+}
+.first.disabled{
+	background: url("../img/page-first-off.png") no-repeat center !important;
+}
+
+.previous.disabled{
+	background: url('../img/page-prev-off.png') no-repeat center !important;
+}
+
+.next.disabled{
+	background: url('../img/page-next-off.png') no-repeat center !important;
+}
+
+.last.disabled{
+	background: url('../img/page-last-off.png') no-repeat center !important;
+}
+.current {
+	!important;
+}
+
+.paging_full {
+font-family: 'Arial Regular', 'Arial';
+font-size:11px !important;
+}
+
+.dataTables_wrapper .dataTables_length {   
+
+  top:15px !important;
+  float: right !important;
+  margin-top:-38px;
+  position: relative !important;
+ 
+}
+
+.dataTables_wrapper .dataTables_paginate {   
+  float: right !important;
+  margin-top: 5px;
+  min-width:250px !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+display:inline !important;
+}
+
+
+
+ 

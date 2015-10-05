@@ -25,7 +25,7 @@ public class Menu {
 	private char list;
 	private char user;
 	private char role;
-	
+	private char travels;
 	
 	public Menu() {
 		dashboard = 'Y';
@@ -51,7 +51,7 @@ public class Menu {
 		list = 'Y';
 		user = 'Y';
 		role = 'Y';
-		
+		setTravels('Y');
 	}
 	public char getDashboard() {
 		return dashboard;
@@ -190,6 +190,12 @@ public class Menu {
 	}
 	public void setRole(char role) {
 		this.role = role;
+	}
+	public char getTravels() {
+		return travels;
+	}
+	public void setTravels(char travels) {
+		this.travels = travels;
 	}
 
 }

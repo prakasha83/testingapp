@@ -44,6 +44,10 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
+<c:if test="${!empty SPRING_SECURITY_LAST_EXCEPTION}">
+ <p class="error"><c:out value="${SPRING_SECURITY_LAST_EXCEPTION.message}"/></p>
+ <c:remove scope="session" var="SPRING_SECURITY_LAST_EXCEPTION"/>
+</c:if>
 
 	<form:form action="j_spring_security_check" commandName="loginForm"
 		name="loginForm" method="post" id="loginform">

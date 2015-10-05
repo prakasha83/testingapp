@@ -23,11 +23,18 @@ public class IndexController {
 	
 	
 	@RequestMapping(value = "/login")
-	public ModelAndView getLogin(@RequestParam(value="error", required=false) boolean error, 
+	public String getLogin(@RequestParam(value="error", required=false) boolean error, 
 			@ModelAttribute("loginForm") LoginForm loginForm, ModelMap model) {
 		ModelAndView mav = new ModelAndView("login");
-		
-		return mav;
+
+		if (error == true) {
+			mav.addObject("error", "Unable to authenticate");
+			model.put("error", "Unable to authenticate");
+		} else {
+			mav.addObject("error", "");
+			model.put("error", "");
+		}
+		return "login";
 	}
 	
 	@RequestMapping(value = "/home")

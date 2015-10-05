@@ -1,0 +1,58 @@
+/*
+//  css/body.css
+
+*/
+
+
+*.bea-portal-body-header, *.bea-portal-body-footer
+{
+  color:  rgb(204, 204, 229);
+  margin:  0px;
+}
+
+
+*.bea-portal-body a
+{
+  display:  inline;
+  text-decoration:  none;
+}
+
+
+*.bea-portal-body-header
+{
+  font-size:  large;
+  font-weight:  bold;
+}
+
+
+*.bea-portal-body-footer
+{
+  font-size:  x-small;
+  font-style:  italic;
+}
+
+
+*.bea-portal-body-content
+{
+}
+
+
+*.bea-portal-body-header a, *.bea-portal-body-footer a
+{
+  color:  rgb(204, 204, 229);
+}
+
+
+*.bea-portal-body a:hover
+{
+  text-decoration:  underline;
+}
+
+
+*.bea-portal-body
+{
+  font-family:  Verdana, Arial, Helvetica, sans-serif;
+  padding:  0px;
+  margin:  0px;
+  background-color:  rgb(255, 255, 255);
+}

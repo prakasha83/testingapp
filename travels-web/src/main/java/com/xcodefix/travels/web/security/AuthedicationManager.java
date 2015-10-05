@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
@@ -27,6 +28,12 @@ public class AuthedicationManager implements AuthenticationManager {
 		String password = auth.getPrincipal().toString();
 		
 		com.xcodefix.entity.model.User user = userService.authenticate(userName, password);
+		
+		if (user == null) {
+			
+			System.out.println("Authentication failed");
+			throw new BadCredentialsException("Authentication failed");
+		}
 		
 		final List<GrantedAuthority> grantedAuths = new ArrayList<GrantedAuthority>();
 		grantedAuths.add(new SimpleGrantedAuthority("admin"));
