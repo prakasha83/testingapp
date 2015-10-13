@@ -8,7 +8,7 @@
 
 <%@ include file="../template/known/head.jsp"%>
 <%@ include file="../template/known/script.jsp"%>
-<script type="text/javascript" src="${pageContext.request.contextPath}/newresources/js/travels.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/newresources/js/customers.js"></script>
 	<body>	
 		<div class="container-fluid" id="travel-app">
 			<div class="navigation" width="30%">
@@ -27,11 +27,11 @@
 					</div>					
 					<br/><br/><br/>
 					<div class="app-content">
-						<table class="display orderRes responsive no-wrap newTab" id="travelsTable">
+						<table class="display orderRes responsive no-wrap newTab" id="customersTable">
 							<thead>
 								<th>ID</th>
-								<th>Travels Name</th>
-								<th>Contact Person</th>
+								<th>Cusomer Name</th>
+								<th>Contact No</th>
 							</thead>
 						</table>
 						</div>
@@ -40,7 +40,8 @@
 		</div>
 		<SCRIPT type="text/javascript">
 			$(document).ready(function() {
-				allTravelsTable();
+				console.log("Going to call ajax load");
+				allCustomersTable();
 			});
 		</SCRIPT>
 		

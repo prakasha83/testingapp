@@ -1,6 +1,6 @@
-function allTravelsTable() {
+function allCustomersTable() {
 				var contPath = getContextPath();
-				$('#travelsTable').dataTable( {
+				$('#customersTable').dataTable( {
 				"bInfo" : false,
 				"bLengthChange" : false,
 				"sDom" : '<"top"lCp>rt<"bottom"i><"clear">',
@@ -8,12 +8,11 @@ function allTravelsTable() {
 				"deferRender": true,
 				"bSortCellsTop": true,
 				"iDisplayLength": 10,
-				stateSave: true,
-				ajax: contPath+"/travels/all-travels",
+				ajax: contPath+"/customer/all-customers",
 				"columns": [
 					        { data: 'id' },
-					        { data: 'travelsName'},
-					        { data: 'contactPerson'}
+					        { data: 'customerName'},
+					        { data: 'contactNo'}
 					    ],
 				"language": {
 						"lengthMenu": "<span class='perpage'>Per Page</span>_MENU_</span>",
@@ -26,16 +25,14 @@ function allTravelsTable() {
 				"order": [[ 1, "desc" ]]
 			} );
 
-			var table = $('#travelsTable').DataTable();
-			$( "#travelsTable" ).wrapAll("<div style='overflow-x:scroll;clear:both;width:100%' ></div>");
-			new $.fn.dataTable.ColReorder(table);
+			var table = $('#customersTable').DataTable();
+			$( "#customersTable" ).wrapAll("<div style='overflow-x:scroll;clear:both;width:100%' ></div>");
 			// color for table
-			$( "#travelsTable_wrapper .top" ).append( "<span id='itsTxt' style='margin-top: 5px'>Travels List</span>" );
+				var createBtnTxt = '<form action="${pageContext.request.contextPath}/adminstrative/create.html" style="float:right;">'+
+	    					'<a href=""><input type="submit" value="Create" class="btnImage"></input></a>'+
+	    				'</form>' ;
+			$( "#customersTable_wrapper .top" ).append( "<span id='itsTxt' style='margin-top: 5px'>Travels List" + createBtnTxt + "</span>" );
 
-			// Reload every 5 min.
-			leadReload = setInterval( function () {
-				$('#travelsTable').DataTable().ajax.reload();
-			}, 300000 );
 
 }
 

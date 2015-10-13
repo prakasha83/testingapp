@@ -3,7 +3,7 @@
 <li class="has-sub"><a href="#"><span><b>Travels</b></span></a>
       <ul >
          <li><a href="${pageContext.request.contextPath}/travels"><span>Travels</span></a></li>
-         <li><a href="#"><span>Dashboard</span></a></li>         
+         <li><a href="${pageContext.request.contextPath}/customer"><span>Customer</span></a></li>         
       </ul>
 </li>   
 <li class="has-sub"><a href="#"><span><b>Admin</b></span></a>
