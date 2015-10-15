@@ -14,6 +14,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import com.xcodefix.entity.model.Role;
 import com.xcodefix.travels.service.UserService;
 
 public class AuthedicationManager implements AuthenticationManager {
@@ -33,6 +34,13 @@ public class AuthedicationManager implements AuthenticationManager {
 			
 			System.out.println("Authentication failed");
 			throw new BadCredentialsException("Authentication failed");
+			
+		}
+		
+		System.out.println("Role List Size : " + user.getRoles().size());
+		
+		for (Role role : user.getRoles()) {
+			System.out.println("Role Name : " + role.getRoleName());
 		}
 		
 		final List<GrantedAuthority> grantedAuths = new ArrayList<GrantedAuthority>();

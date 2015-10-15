@@ -1,5 +1,7 @@
 package com.xcodefix.entity.model;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,7 +18,7 @@ public class User {
 	private String userName;
 	private String password;
 	private String email;
-	private Role role;
+	private List<Role> roles;
 	private RecordStaus recordStatus;
 	
 	@Id
@@ -52,13 +54,12 @@ public class User {
 		this.email = email;
 	}
 	
-	@OneToOne
-	@JoinColumn(name = "role_id")
-	public Role getRole() {
-		return role;
+	public List<Role> getRoles() {
+		return roles;
 	}
-	public void setRole(Role role) {
-		this.role = role;
+	
+	public void setRoles(List<Role> roles) {
+		this.roles = roles;
 	}
 	
 	@OneToOne
