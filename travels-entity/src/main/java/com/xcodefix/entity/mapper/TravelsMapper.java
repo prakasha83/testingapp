@@ -7,7 +7,6 @@ import java.sql.SQLException;
 import org.springframework.jdbc.core.RowMapper;
 
 import com.xcodefix.entity.model.Travels;
-import com.xcodefix.entity.model.User;
 
 public class TravelsMapper implements RowMapper<Travels> {
 

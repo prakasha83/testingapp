@@ -14,8 +14,9 @@ import com.xcodefix.entity.model.process.LoginForm;
 @Controller
 public class IndexController {
 	
-	@RequestMapping(value = "")
+	@RequestMapping(value = "/index")
 	public ModelAndView getIndex() {
+		System.out.println("In Index");
 		ModelAndView mav = new ModelAndView("pages/login");
 		
 		return mav;
@@ -25,6 +26,7 @@ public class IndexController {
 	@RequestMapping(value = "/login")
 	public String getLogin(@RequestParam(value="error", required=false) boolean error, 
 			@ModelAttribute("loginForm") LoginForm loginForm, ModelMap model) {
+		System.out.println("In login");
 		ModelAndView mav = new ModelAndView("login");
 
 		if (error == true) {
@@ -39,6 +41,7 @@ public class IndexController {
 	
 	@RequestMapping(value = "/home")
 	public ModelAndView getHome() {
+		System.out.println("In home");
 		ModelAndView mav = new ModelAndView("index");
 		ActiveMenu menu = new ActiveMenu();
 		menu.setDashboard("active");

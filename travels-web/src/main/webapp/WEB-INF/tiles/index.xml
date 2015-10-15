@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+<tiles-definitions>  
+    <definition name="base.page.definition"  
+        template="/WEB-INF/template/known/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/template/known/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/template/known/menu.jsp" />  
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/template/known/footer.jsp" />  
+    </definition>  
+    
+    <definition name="index" extends="base.page.definition">
+    	<put-attribute name="title" value="Travels - Dashboard New"/>
+    	<put-attribute name="body" value="/WEB-INF/index.jsp"></put-attribute>
+    </definition>
+</tiles-definitions>
